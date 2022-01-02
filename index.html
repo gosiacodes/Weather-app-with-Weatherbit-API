@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Malgorzata Pick" />
+    <meta
+      name="description"
+      content="Weather app | check weather | weather | väder | pogoda | JavaScript | application | API"
+    />
+    <meta
+      name="keywords"
+      content="weather, weather app, check weather, weather, väder, pogoda, API, front-end, webbutvecklare, utvecklare, programmering, webbdesign, web design, HTML, CSS, JavaScript, Malgorzata Pick"
+    />
+    <script src="js/anime.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/3318035e44.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quantico&family=Roboto&family=Varela+Round&display=swap"
+    />
+    <link rel="icon" href="img/weather_16.png" type="image/jpg" sizes="16x16" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <!-- Select language -->
+    <select name="language" id="language">
+      <option value="sv">SE</option>
+      <option value="en">EN</option>
+      <option value="pl">PL</option>
+    </select>
+    <!-- End of select language -->
+    <!-- Header -->
+    <header>
+      <div class="web-info">
+        <div class="menu-row">
+          <img src="img/weather_48.png" class="logo" />
+          <h2 class="title">Weather Forecast</h2>
+        </div>
+        <div id="weather-position-container"></div>
+      </div>
+      <!-- Form -->
+      <form>
+        <div class="menu-row">
+          <input type="text" placeholder="Enter city name" id="text" required />
+          <button type="submit" id="search-weather-btn" title="Search">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </form>
+      <!-- End of form -->
+    </header>
+    <!-- End of header -->
+    <main>
+      <!-- Spinner animation -->
+      <div class="spinner-wrapper">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <!-- End of spinner animation -->
+      <!-- Containers with weather forecast results -->
+      <div id="date-info-div"></div>
+      <div class="main-container">
+        <div id="weather-currently-container"></div>
+        <div id="weather-daily-container"></div>
+      </div>
+      <!-- End of containers with results -->
+      <!-- Logo animation -->
+      <div class="logo-spinner-wrapper row">
+        <img src="img/weather_96.png" class="logo-anim" />
+      </div>
+      <!-- End of logo animation -->
+      <!-- Message Modal -->
+      <div id="message-modal" class="modal-background">
+        <!-- Modal content -->
+        <div class="modal-container">
+          <div class="modal-header">
+            <div>
+              Message
+              <span class="close" id="error-close" title="Close">&times;</span>
+            </div>
+          </div>
+          <div class="row">
+            <p class="message"></p>
+            <button type="submit" class="message-button" title="OK">OK</button>
+          </div>
+        </div>
+      </div>
+      <!-- End Message Modal -->
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <span id="chevron" title="To the top"
+          ><a href="#"><i class="fas fa-chevron-circle-up"></i></a
+        ></span>
+        <p class="copyright">Copyright &copy; 2022 | Malgorzata Pick</p>
+      </div>
+    </footer>
+    <!-- End footer -->
+  </body>
+</html>

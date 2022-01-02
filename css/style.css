@@ -1,0 +1,587 @@
+/* Global css settings */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+} 
+
+body {
+    font-family: Roboto, Tahoma, Helvetica, Verdana, Arial, sans-serif;
+    background-color: #0099ff;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    padding: 0 3rem;
+}
+
+p, h2, h3, h4 {
+    margin-block-start: 0.8rem;
+    margin-block-end: 0.8rem;
+}
+
+h2, h3 {
+    font-family: Varela Round, Tahoma, Helvetica, Verdana, Arial, sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+
+/* Menu */
+.menu-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.web-info {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    border-radius: 50%;
+    margin: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    box-shadow: 4px 4px 6px rgba(255, 248, 238,.7);
+}
+
+/* Title */
+.title {
+    font-family: Varela Round, Tahoma, Helvetica, Verdana, Arial, sans-serif;
+    letter-spacing: 0.05rem;
+    color: #fff;
+    margin: 1rem;
+}
+
+/* Weather by current position div */
+#weather-position-container {
+    font-family: Varela Round, Tahoma, Helvetica, Verdana, Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    width: 10rem;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+/* Text input */
+input {
+    font-size: 1rem;
+    border: 1px #004097 solid;
+    border-radius: 0.25rem;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    width: 45rem;
+    height: 2rem;
+    box-shadow: 0 2px 5px rgba(255, 248, 238,.7);
+}
+
+input:focus {
+    border: 1px red solid;
+    box-shadow: 0 4px 10px rgba(255, 248, 238,.7);
+}
+
+/* Buttons */
+button {
+    font-family: Varela Round, Tahoma, Helvetica, Verdana, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #004097;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    margin: 1rem;
+    margin-left: 0;
+    padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    transition-duration: 0.4s;
+    box-shadow: 0 2px 5px rgba(255, 248, 238,.7);
+}
+
+button:hover {
+    background-color: #005CB9;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 248, 238,.7);
+}
+
+/* Select language */
+select {
+    position: absolute;
+    right: 0.5rem;
+    text-align: center;
+    border: solid 2px #004097;
+    border-radius: 0.25rem;
+    height: 2rem;
+    width: 3rem;
+    box-shadow: 0 2px 5px rgba(255, 248, 238,.7);
+}
+
+/* Spinner animation*/
+.spinner-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box {
+    background-color: #F9F871;
+    margin: 1rem;
+    width: 2rem;
+    height: 2rem;
+    box-shadow: 0 2px 5px rgba(255, 248, 238,.7);
+}
+
+/* Logo spinner animation*/ 
+.logo-anim {
+    border: 1px #fff solid;
+    border-radius: 50%;
+    margin: 2rem;
+    box-shadow: 4px 4px 6px rgba(255, 248, 238,.7);
+}
+
+/* Containers with weather results */
+/* Date info div */
+#date-info-div {
+    position: absolute;
+    color: #fff;
+}
+
+.date-info {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+/* Main container div */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Weather curently div */
+#weather-currently-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #002776;
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 0.25rem;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    width: 18rem;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(255, 248, 238,.7);
+}
+
+/* Current weather elements */
+.city-name {
+    font-family: Varela Round, Tahoma, Helvetica, Verdana, Arial, sans-serif;
+    letter-spacing: 0.05rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.row-current {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-current-weather {
+    width: 5rem;
+    height: 5rem;
+}
+
+.temp {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.info {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+/* Weather daily div */
+#weather-daily-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #002776;
+    border: solid 1px #fff;
+    border-radius: 0.25rem;
+    margin: 2rem auto;
+    padding: 3rem;
+    width: 80%;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(255, 248, 238,.7);
+}
+
+/* Weather one day div */
+.weather-day-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: #0099ff;
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 0.25rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 20%;
+}
+
+/* One day weather elements */
+.temp-day {
+    font-size: 1.5rem;
+}
+
+.info-day {
+    font-size: 1.2rem;
+}
+
+.icon-daily-weather {
+    width: 5rem;
+    height: 5rem;
+}
+
+/* Message modal */
+.modal-background {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 6.25rem;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-container {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    max-width: 30rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 5px rgba(74,68,83,.7);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Modal animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* Modal content */
+.modal-header {
+    font-family: Varela Round, Tahoma, Helvetica, Verdana, Arial, sans-serif;
+    font-size: 1rem;
+    background-color: #002776;
+    color: #ffffff;
+    padding: 0.6rem 1rem;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.message {
+    color: #ff4d4d;
+    font-size: 1rem;
+    padding: 1rem 0 1rem 1rem;
+    word-wrap: break-word;
+}
+
+.message-button {
+    margin: 1.5rem;
+    height: 2rem;
+    box-shadow: 0 2px 5px rgba(74,68,83,.7);
+}
+
+.message-button:hover {
+    box-shadow: 0 4px 10px rgba(74,68,83,.7);
+}
+
+/* Footer */
+.footer {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    background-color: #004097;
+    color: #fff;
+    width: 100%;
+    height: 4.3rem;
+    box-shadow: 4px 0 8px rgba(255, 248, 238,.7);
+}
+
+.copyright {
+    font-family: Varela Round, Tahoma, Helvetica, Verdana, Arial, sans-serif;
+    padding: 1.25rem;
+    margin-top: 0;
+}
+
+#chevron a {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.625rem;
+    margin-right: 0.625rem;
+    float: right;
+}
+
+#chevron a:hover {
+    color: #1693e5;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1260px) { 
+    input {
+        width: 40rem;
+    }
+    #weather-daily-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .weather-day-container {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 0.5rem;
+        margin: 0.2rem;
+        padding: 0.4rem 1rem;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 1040px) { 
+    input {
+        width: 30rem;
+    }
+}
+
+@media only screen and (max-width: 770px) { 
+    h2 {
+        font-size: 1.2rem;
+    }
+    select {
+        font-size: 0.7rem;
+        height: 1.5rem;
+        width: 2rem;
+        appearance: none;
+    }
+    header {
+        flex-direction: column;
+        margin: 1rem 0 0;
+    }
+    .logo {
+        width: 2rem;
+        height: 2rem;
+    }
+    form {
+        justify-content: center;
+    }
+    input {
+        font-size: 0.9rem;
+        height: 1.5rem;
+    }
+    button {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    main {
+        padding: 0 2rem;
+    }
+    .city-name {
+        font-size: 1.9rem;
+        letter-spacing: 0;
+    }
+    .temp {
+        font-size: 2.2rem;
+    }
+    .info {
+        font-size: 1.5rem;
+    }    
+    .temp-day {
+        font-size: 1.2rem;
+    }
+    .info-day {
+        font-size: 1rem;
+    }
+    .modal-container {
+        max-width: 27rem;
+    }
+    .modal-header, .message, .close, .message-button {
+        font-size: 0.9rem;
+    }
+    .modal-header {
+        padding: 0.6rem;
+    }
+    .message {
+        padding: 0.5rem 0 0.5rem 0.5rem;
+    }
+    .message-button {
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    input {
+        width: 15rem;
+        padding: 0.3rem 0.8rem;
+        margin: 0.5rem;
+    }
+    button {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin: 0.5rem;
+        font-size: 0.9rem;
+    }
+    main {
+        padding: 0 1rem;
+    }
+    .date-info {
+        margin-left: 3.5rem;
+    }
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #weather-daily-container {
+        margin: 0 auto 2rem;
+        width: 90%;
+    }
+    .footer { 
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+    #chevron a {
+        font-size: 1.9rem;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    h2 {
+        font-size: 0.9rem;
+        font-weight: normal;
+    }
+    .box {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .city-name {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .icon-current-weather {
+        width: 4rem;
+        height: 4rem;
+    } 
+    .weather-day-container {
+        margin: 0.1rem;
+        padding: 0.4rem;
+        border: none;
+    }
+    .icon-daily-weather {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .temp-day {
+        font-size: 0.9rem;
+    } 
+    .info-day {
+        font-size: 0.8rem;
+    }
+    .modal-container {
+        max-width: 23rem;
+    }
+    .modal-header, .message, .close, .message-button {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    input {
+        width: 12rem;
+    }
+    .date-info {
+        margin-left: 2rem;
+    }
+    #weather-currently-container {
+        padding: 1rem 0.25rem;
+    }
+    .footer { 
+        font-size: 0.9rem;
+    }
+    #chevron a {
+        font-size: 1.7rem;
+        margin-right: 0.3rem;
+    }
+    .modal-container {
+        max-width: 17rem;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    input {
+        width: 10rem;
+    }
+    .temp-day {
+        font-size: 0.9rem;
+    }
+}
