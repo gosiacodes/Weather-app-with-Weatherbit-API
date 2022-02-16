@@ -10,3 +10,17 @@ If you allow to get your geolocation, you will get weather forecast directly!
 Enter name of the city or "city, country code" (for example: London, GB) to choose new place to check weather.
 
 You can choose between three languages: English, Swedish and Polish to get the answer.
+
+## GUI and languages examples
+
+![Weather app Swedish ex](/img/weather_app_se.png)
+
+![Weather app English ex](/img/weather_app_en.png)
+
+![Weather app Polish ex](/img/weather_app_pl.png)
+
+
+
+
+
+
