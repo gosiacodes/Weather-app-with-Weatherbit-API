@@ -1,7 +1,9 @@
-# Weather-app-with-Weatherbit-API
+# ✨ Weather app with Weatherbit API and anime.js ✨
 Weather app with API and anime.js - school project at JavaScript1 course (2022)
 
 https://margareta75.github.io/Weather-app-with-Weatherbit-API/
+
+## :pushpin: _How does the application work?_
 
 Check weather forecast for your city!
 
@@ -11,7 +13,7 @@ Enter name of the city or "city, country code" (for example: London, GB) to choo
 
 You can choose between three languages: English, Swedish and Polish to get the answer.
 
-## GUI and languages examples
+## :pushpin: _GUI and languages examples_
 
 ![Weather app Swedish ex](/img/weather_app_se.png)
 
