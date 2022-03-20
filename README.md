@@ -13,6 +13,8 @@ Enter name of the city or "city, country code" (for example: London, GB) to choo
 
 You can choose between three languages: English, Swedish and Polish to get the answer.
 
+Application has responsive design.
+
 ## :pushpin: _GUI and languages examples_
 
 ![Weather app Swedish ex](/img/weather_app_se.png)
