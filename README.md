@@ -1,7 +1,7 @@
 ## ✨ Weather App with Weatherbit API and anime.js ✨
 Weather App with API and anime.js - school project at JavaScript1 course (2022)
 
-https://margareta75.github.io/Weather-app-with-Weatherbit-API/
+https://gosiacodes.github.io/Weather-app-with-Weatherbit-API/
 
 ## :pushpin: _How does the application work?_
 
