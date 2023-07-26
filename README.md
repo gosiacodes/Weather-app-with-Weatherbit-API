@@ -15,7 +15,7 @@ You can choose between three languages: English, Swedish and Polish to get the a
 
 Application has responsive design.
 
-## :pushpin: _GUI and languages examples_
+## :pushpin: _GUI examples in 3 different languages_
 
 ![Weather app Swedish ex](/img/weather_app_se.png)
 
